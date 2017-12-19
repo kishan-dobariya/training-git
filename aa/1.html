@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var d = new Date();
+	var week = new Array('Sunday', 'monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+	document.writeln("Today is : "+week[d.getDay()]+"<br>");
+	//document.writeln(d.getFullYear());
+	//document.writeln(d.getMonth()+1);
+	//document.writeln(d.getDate());
+	var hrs = d.getHours();
+	if (hrs<12)
+		hrs+=" AM";
+	else
+		hrs= (hrs-12)+" PM";
+	document.writeln("Current time is : "+hrs+" : "+d.getMinutes()+" : "+d.getSeconds());
+</script>
+</body>
+</html>
